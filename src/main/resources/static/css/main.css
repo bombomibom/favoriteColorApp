@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+header {
+	display: flex;
+	height: 80px;
+	line-height: 80px;
+	background: #000;
+}
+
+header * {
+	color: #fff;
+}
+
+h3 {
+	padding: 0 20px;
+	cursor: pointer;
+}
+
+h3:hover {
+	background-color: #333;
+}
+
+section {
+	height: calc(100% - 80px);
+	width: 100%;
+}
+
+ol {
+	list-style-type: none;
+	width: 25%;
+	height: 25%;
+	float: left;
+	text-align: center;
+}
+
+li {
+	height: 100%;
+	cursor: pointer;
+}
+
+#colorNm {
+	display: block;
+}
