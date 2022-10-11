@@ -44,14 +44,8 @@
 				var hexList = "#";
 				for(let j = 0; j < changeLiText.length; j++){
 					var changeNum = Number(changeLiText[j]);
-					//console.log(changeNum);
 					var changeHexNum = changeNum.toString(16);
-					console.log(j + ": " + changeHexNum);
-					//console.log(j + " length : " + changeHexNum.length);
-					if(changeHexNum.length == 1){
-						//console.log("this" + changeHexNum);
-						changeHexNum = "0" + changeHexNum;
-					}
+					//console.log(j + ": " + changeHexNum);
 					hexList = hexList + changeHexNum;
 					//console.log(hexList);
 				}

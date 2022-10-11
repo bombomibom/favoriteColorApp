@@ -7,6 +7,7 @@
 
 body {
 	width: 100%;
+	height: 100vh;
 }
 
 header {
@@ -30,18 +31,20 @@ h3:hover {
 }
 
 section {
+	height: calc(100% - 80px);
 	width: 100%;
 }
 
 ol {
 	list-style-type: none;
 	width: 25%;
+	height: 25%;
 	float: left;
 	text-align: center;
 }
 
 li {
-	padding: 25%;
+	height: 100%;
 	cursor: pointer;
 }
 
