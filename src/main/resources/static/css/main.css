@@ -41,7 +41,7 @@ ol {
 }
 
 li {
-	padding: 124px;
+	padding: 124px 0;
 	cursor: pointer;
 }
 
