@@ -25,7 +25,7 @@ public class MainController {
 	}
 	
 	// moveSelectColorPage
-	@GetMapping("/moveSelectColorPage")
+	@GetMapping("/select_color")
 	public String moveSelectColorPage(Model model) {
 		ColorFunction colorFunction = new ColorFunction();
 		try {
@@ -38,29 +38,9 @@ public class MainController {
 		}
 		return "main";
 	}
-	
+
 	// moveHistoryPage
-	@ResponseBody
-	@PostMapping("/insert_action")
-	public String insert_action(HttpServletRequest request, Model model) {
-		DB db = new DB("color");
-		
-		String color = request.getParameter("color");
-		String msg = "";
-		System.out.println(color);
-		
-		try {
-			db.insertData(new Color(color));
-			msg = "입력 되었습니다.";
-			return msg;
-		} catch (Exception e) {
-			msg = "입력에 실패했습니다.";
-			return msg;
-		}
-	}
-	
-	// moveHistoryPage
-	@GetMapping("/moveHistoryPage")
+	@GetMapping("/history_color")
 	public String moveHistoryPage(Model model) {
 		DB db = new DB("color");
 		
